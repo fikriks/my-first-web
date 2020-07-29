@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fikri KS</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/styles/styles2.css">
+    </head>
+   <body>
+    <div class="flex-container-column">
+        <h1>Data Siswa</h1>
+        <h2>Halo,Selamat Datang <span id="user"></span></h2>
+    <div class="card">
+    <div class="flex-container-row">
+    <h4>Nama :</h4>
+    <input type="text" name="nama" placeholder="Masukan Nama..">
+    </div>
+    <div class="flex-container-row">
+        <h4>Kelas :</h4>
+    <input type="text" name="kelas" placeholder="Masukan Kelas..">
+    </div>
+    <button id="button">Submit</button>
+</div>
+    <div class="history card">
+        <h2>Daftar Nama Siswa</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Kelas</th>
+                </tr>
+            </thead>
+            <tbody id="historyList"></tbody>
+        </table>
+        <br/>
+        <button id="clear">Hapus</button>
+    </div>
+</div>
+    <script src="assets/js/fikri.js"></script>
+   </body>
+</html>

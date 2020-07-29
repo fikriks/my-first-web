@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron{
+    font-size: 18px;
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+
+header{
+    display: inline;
+}
+
+nav{
+    text-align: right;
+    background-color: #f7f7f7;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    overflow: auto;
+}
+
+.brand{
+    float: left;
+    margin: 20px;
+}
+
+nav li{
+    margin-right: 20px;
+    display: inline;
+    list-style-type: none;
+}
+
+nav a{
+    font-size: 18px;
+    font-weight: 200;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    font-weight: bold;
+}
+
+main{
+    overflow: auto;
+    padding: 20px;
+}
+
+#content{
+    float: left;
+    width: 75%;
+}
+
+.card{
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.image{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+aside{
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.profile header{
+    text-align: center;
+}
+
+.profile img{
+    width: 100%;
+}
+
+.profile h3{
+    text-align: center;
+}
+
+table{
+    width: 100%;
+}
+
+th,td{
+   text-align: center; 
+}
+
+footer{
+    background-color: #f7f7f7;
+    padding:20px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1000px){
+    nav{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .brand{
+        display: none;
+    }
+    #content,aside{
+        width: 100%;
+        padding: 0;
+    }
+}
